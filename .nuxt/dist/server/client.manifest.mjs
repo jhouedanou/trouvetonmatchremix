@@ -1,1 +1,1 @@
-export { default } from "file:///Users/bigfiveproduction/Documents/trouvetonmatchremix/trouvetonmatchremix/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/bigfiveproduction/Documents/trouvetonmatchremix/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

@@ -1,0 +1,62 @@
+// Variables Bootstrap personnalisées
+$primary  : #007bff;
+$secondary: #6c757d;
+$success  : #28a745;
+$info     : #17a2b8;
+$warning  : #ffc107;
+$danger   : #dc3545;
+$light    : #f8f9fa;
+$dark     : #343a40;
+
+// Import de Bootstrap
+
+// Styles personnalisés
+body {
+    min-height      : 100vh;
+    background-color: $light;
+}
+
+.container {
+    padding: 2rem;
+}
+
+// Animations
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+// Variables de police
+$font-family-base: 'Open Sans',
+sans-serif;
+
+// Variables de poids de police
+$font-weight-light    : 300;
+$font-weight-normal   : 400;
+$font-weight-medium   : 500;
+$font-weight-semibold : 600;
+$font-weight-bold     : 700;
+$font-weight-extrabold: 800;
+
+
+// Utilisation dans des classes utilitaires
+.text-light {
+    font-weight: $font-weight-light;
+}
+
+.text-medium {
+    font-weight: $font-weight-medium;
+}
+
+.text-semibold {
+    font-weight: $font-weight-semibold;
+}
+
+.text-extrabold {
+    font-weight: $font-weight-extrabold;
+}
