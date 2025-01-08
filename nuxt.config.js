@@ -4,6 +4,11 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
+      meta: [
+        { property: 'og:title', content: 'Trouve ton match' },
+        { property: 'og:image', content: 'https://sprightly-bombolone-5fafbd.netlify.app/img/logosplash.png' },
+        { property: 'og:type', content: 'website' }
+      ],
       link: [
         {
           rel: 'stylesheet',
