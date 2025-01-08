@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+  devtools: {
+    enabled: false
+  },
   app: {
     head: {
       link: [
@@ -9,7 +12,6 @@ export default defineNuxtConfig({
       ]
     }
   },
-
   css: [
     'bootstrap/dist/css/bootstrap.css',
     '@/assets/scss/style.scss'
@@ -29,5 +31,11 @@ export default defineNuxtConfig({
     transpile: ['bootstrap']
   },
 
+  modules: [
+    '@pinia/nuxt',
+  ],
+  pinia: {
+    autoImports: ['defineStore', 'storeToRefs']
+  },
   compatibilityDate: '2025-01-08'
 })

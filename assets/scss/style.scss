@@ -1,3 +1,5 @@
+@use 'bulma/bulma';
+
 // Variables Bootstrap personnalisées
 $primary  : #007bff;
 $secondary: #6c757d;
@@ -65,10 +67,11 @@ $font-weight-extrabold: 800;
 body {
     font-family    : $font-family-base;
     font-weight    : 400;
-    background     : url(img/background1.jpg) no-repeat center center #fc7272;
-    background-size: cover;
+    background     : url(/img/background1.jpg) no-repeat center center #fc7272;
+    background-size: contain;
     min-height     : 100vh;
     height         : 100%;
+    position       : relative;
 }
 
 .macho {
@@ -225,7 +228,7 @@ $secondary: #C40E0E;
     box-shadow      : inset 0 3px 6px 0 rgba(0, 0, 0, 0.16);
     background-color: #fff;
     color           : $secondary;
-    font-family     : Calibri;
+    font-family     : $font-family-base;
     font-size       : 15px;
     font-weight     : 800;
     text-transform  : uppercase;
@@ -238,7 +241,7 @@ $secondary: #C40E0E;
 
     &::-webkit-input-placeholder {
         color         : $secondary;
-        font-family   : Calibri;
+        font-family   : $font-family-base;
         font-size     : 15px;
         font-weight   : 800;
         text-transform: uppercase;
@@ -251,7 +254,7 @@ $secondary: #C40E0E;
 
     &::-moz-placeholder {
         color         : $secondary;
-        font-family   : Calibri;
+        font-family   : $font-family-base;
         font-size     : 15px;
         font-weight   : 800;
         text-transform: uppercase;
@@ -264,7 +267,7 @@ $secondary: #C40E0E;
 
     &:-ms-input-placeholder {
         color         : $secondary;
-        font-family   : Calibri;
+        font-family   : $font-family-base;
         font-size     : 15px;
         font-weight   : 800;
         text-transform: uppercase;
@@ -277,7 +280,7 @@ $secondary: #C40E0E;
 
     &::-ms-input-placeholder {
         color         : $secondary;
-        font-family   : Calibri;
+        font-family   : $font-family-base;
         font-size     : 15px;
         font-weight   : 800;
         text-transform: uppercase;
@@ -290,7 +293,7 @@ $secondary: #C40E0E;
 
     &::placeholder {
         color         : $secondary;
-        font-family   : Calibri;
+        font-family   : $font-family-base;
         font-size     : 15px;
         font-weight   : 800;
         text-transform: uppercase;
@@ -426,7 +429,7 @@ $secondary: #C40E0E;
 
 #accueil {
     .button {
-        width : 80vw !important;
+        width : 280px !important;
         margin: 0 auto !important;
     }
 }
@@ -553,7 +556,7 @@ div#matchmaking {
         }
 
         h2 {
-            font-family   : Calibri;
+            font-family   : $font-family-base;
             font-size     : 18px;
             font-weight   : normal;
             font-stretch  : normal;
@@ -631,3 +634,12 @@ div#matchmaking {
         ;
     }
 }
+
+.card {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    border-radius: 15px !important;
+    padding: 1rem !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1) !important;
+  
+    color: #c40e0e !important;
+  }

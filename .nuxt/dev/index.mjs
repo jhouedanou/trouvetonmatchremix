@@ -161,23 +161,6 @@ const errorHandler = (async function errorhandler(error, event) {
   return send(event, html);
 });
 
-const script = `
-if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
-  Object.defineProperty(window, '__NUXT_DEVTOOLS_TIME_METRIC__', {
-    value: {},
-    enumerable: false,
-    configurable: true,
-  })
-}
-window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
-`;
-
-const _IMQ7lWjRMq = (function(nitro) {
-  nitro.hooks.hook("render:html", (htmlContext) => {
-    htmlContext.head.push(`<script>${script}<\/script>`);
-  });
-});
-
 const rootDir = "/Users/bigfiveproduction/Documents/trouvetonmatchremix";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"}],"style":[],"script":[],"noscript":[]};
@@ -267,8 +250,7 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _IMQ7lWjRMq,
-_7HraA53Bgv
+  _7HraA53Bgv
 ];
 
 const _lazy_0CiTe0 = () => Promise.resolve().then(function () { return renderer$1; });
@@ -705,7 +687,10 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "SUPABASE_URL": "https://fudeqfoqeejiswzfnqdq.supabase.co",
+    "SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZ1ZGVxZm9xZWVqaXN3emZucWRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzYzNDg4MTIsImV4cCI6MjA1MTkyNDgxMn0.RV1B_O14vzIvu4ut2pMrE-83ISOQTJ715pO3pZRhnY0"
+  }
 };
 const envOptions = {
   prefix: "NITRO_",

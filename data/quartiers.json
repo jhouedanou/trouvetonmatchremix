@@ -1,0 +1,54 @@
+{
+  "quartiers": [
+    {
+      "id": 1,
+      "nom": "Abobo",
+      "zone": "nord"
+    },
+    {
+      "id": 2,
+      "nom": "Adjamé",
+      "zone": "centre"
+    },
+    {
+      "id": 3,
+      "nom": "Attécoubé",
+      "zone": "centre"
+    },
+    {
+      "id": 4,
+      "nom": "Cocody",
+      "zone": "est"
+    },
+    {
+      "id": 5,
+      "nom": "Koumassi",
+      "zone": "sud"
+    },
+    {
+      "id": 6,
+      "nom": "Marcory",
+      "zone": "sud"
+    },
+    {
+      "id": 7,
+      "nom": "Plateau",
+      "zone": "centre"
+    },
+    {
+      "id": 8,
+      "nom": "Port-Bouët",
+      "zone": "sud"
+    },
+    {
+      "id": 9,
+      "nom": "Treichville",
+      "zone": "centre"
+    },
+    {
+      "id": 10,
+      "nom": "Yopougon",
+      "zone": "ouest"
+    }
+  ]
+}
