@@ -1,0 +1,1 @@
+export { default } from "file:///Users/bigfiveproduction/Documents/trouvetonmatchremix/trouvetonmatchremix/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
