@@ -60,3 +60,574 @@ $font-weight-extrabold: 800;
 .text-extrabold {
     font-weight: $font-weight-extrabold;
 }
+
+
+body {
+    font-family    : $font-family-base;
+    font-weight    : 400;
+    background     : url(img/background1.jpg) no-repeat center center #fc7272;
+    background-size: cover;
+    min-height     : 100vh;
+    height         : 100%;
+}
+
+.macho {
+    font-family: $font-family-base, sans-serif;
+    font-weight: 700;
+    font-style : normal;
+}
+
+.calibri {
+    font-family: $font-family-base;
+    font-weight: 400;
+}
+
+.calibri-bold {
+    font-family: $font-family-base;
+    font-weight: 700;
+}
+
+$primary  : #f89dae;
+$secondary: #C40E0E;
+
+.panel {
+    &:hover {
+        background: $primary;
+    }
+}
+
+.radio {
+    display       : flex;
+    flex-direction: column;
+
+    font-weight: bold;
+
+    input {
+        margin-top: 1em;
+    }
+}
+
+.dflex {
+    clear          : both;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : row;
+}
+
+#symbole {
+    max-width: 350px;
+}
+
+#html_image {
+    max-width: 450px;
+}
+
+.section {
+    max-width      : 375px;
+    margin         : 0 auto;
+    height         : 100vh;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 0em;
+}
+
+
+#awa {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    margin         : 0 auto !important;
+}
+
+#deba {
+    font-size  : 35px;
+    font-family: $font-family-base, sans-serif;
+    color      : #fff;
+    font-weight: 700;
+    text-align : center;
+}
+
+#groupecentral {
+    p {
+        margin: 1em auto;
+
+        font-size     : 23px;
+        font-family   : $font-family-base, sans-serif;
+        color         : #fff;
+        font-weight   : 700;
+        text-align    : center;
+        text-transform: uppercase !important;
+    }
+
+    span {
+        margin: 2em auto;
+
+        color          : #FFF;
+        text-align     : center;
+        font-weight    : bold;
+        display        : flex;
+        justify-content: center;
+    }
+}
+
+.button {
+    color         : $secondary !important;
+    background    : white;
+    font-size     : 1em !important;
+    font-weight   : 700;
+    text-transform: uppercase;
+    border-radius : 28px;
+    width         : 100% !important;
+    display       : block;
+    border        : none;
+
+    &:hover {
+        background: $secondary !important;
+        color     : white !important;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.title {
+    font-family   : $font-family-base;
+    font-size     : 22px;
+    font-weight   : bold;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.14;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : #fff;
+
+}
+
+.select {
+    width: 100%;
+}
+
+#formulaire {
+
+    .is-6 {
+        .radio {
+            font-size: 0em;
+        }
+    }
+}
+
+.input,
+.textarea,
+.select select:not([multiple]) {
+    box-shadow      : inset 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+    color           : $secondary;
+    font-family     : Calibri;
+    font-size       : 15px;
+    font-weight     : 800;
+    text-transform  : uppercase;
+    font-stretch    : normal;
+    font-style      : normal;
+    line-height     : 1.13;
+    letter-spacing  : normal;
+    text-align      : left;
+    border-radius   : 15px;
+
+    &::-webkit-input-placeholder {
+        color         : $secondary;
+        font-family   : Calibri;
+        font-size     : 15px;
+        font-weight   : 800;
+        text-transform: uppercase;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.13;
+        letter-spacing: normal;
+        text-align    : left;
+    }
+
+    &::-moz-placeholder {
+        color         : $secondary;
+        font-family   : Calibri;
+        font-size     : 15px;
+        font-weight   : 800;
+        text-transform: uppercase;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.13;
+        letter-spacing: normal;
+        text-align    : left;
+    }
+
+    &:-ms-input-placeholder {
+        color         : $secondary;
+        font-family   : Calibri;
+        font-size     : 15px;
+        font-weight   : 800;
+        text-transform: uppercase;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.13;
+        letter-spacing: normal;
+        text-align    : left;
+    }
+
+    &::-ms-input-placeholder {
+        color         : $secondary;
+        font-family   : Calibri;
+        font-size     : 15px;
+        font-weight   : 800;
+        text-transform: uppercase;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.13;
+        letter-spacing: normal;
+        text-align    : left;
+    }
+
+    &::placeholder {
+        color         : $secondary;
+        font-family   : Calibri;
+        font-size     : 15px;
+        font-weight   : 800;
+        text-transform: uppercase;
+        font-stretch  : normal;
+        font-style    : normal;
+        line-height   : 1.13;
+        letter-spacing: normal;
+        text-align    : left;
+    }
+}
+
+.radiochil {
+    font-size  : 0em;
+    display    : flex;
+    align-items: center;
+
+    img {
+        margin-left: 5px;
+        height     : 55px;
+        width      : auto;
+    }
+}
+
+#matthoas {
+    font-family   : $font-family-base;
+    font-size     : 22px;
+    font-weight   : bold;
+    font-stretch  : normal;
+    font-style    : normal;
+    line-height   : 1.14;
+    letter-spacing: normal;
+    text-align    : center;
+    color         : #fff;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    perspective     : 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position       : relative;
+    width          : 100%;
+    height         : 100%;
+    text-align     : center;
+    transition     : transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    position                   : absolute;
+    width                      : 100%;
+    height                     : 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility        : hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: rgba(255, 255, 255, 0);
+    color           : black;
+}
+
+/* Style the back side */
+.flip-card-back {
+    color    : white;
+    transform: rotateY(180deg);
+    position : relative;
+
+    input {
+        position  : absolute !important;
+        border    : none;
+        background: none;
+        box-shadow: none;
+        position  : absolute;
+        top       : 0;
+        margin    : auto;
+        right     : 0;
+        bottom    : 0;
+        left      : 0;
+
+    }
+
+    input[type=radio] {
+        border: 0px;
+        width : 100%;
+        height: 0em;
+    }
+}
+
+#tiragedecartes {
+    background     : url(img/background2.png) no-repeat center center #fc7272 !important;
+    background-size: cover !important;
+
+    .section {
+        padding    : 2em;
+        align-items: flex-start;
+    }
+}
+
+.flip-card {
+    .label {
+        display        : flex;
+        align-items    : center !important;
+        justify-content: center !important;
+    }
+
+    img {
+        margin: 0 auto !important;
+        height: 150px !important;
+        width : auto;
+    }
+}
+
+#formulaire {
+    .column {
+        padding: 2px;
+
+    }
+}
+
+#accueil {
+    .button {
+        width : 80vw !important;
+        margin: 0 auto !important;
+    }
+}
+
+div#mathusalmen {
+    padding-bottom: 3em;
+}
+
+div#matchmaking {
+    padding: 1em
+}
+
+#lacarte {
+    background     : url(img/background2.png) no-repeat center center #fc7272 !important;
+    background-size: cover !important;
+    padding-bottom : 1em !important;
+
+
+}
+
+.biere {
+    background       : url(img/logobiere.png);
+    height           : 54px;
+    background-size  : contain;
+    display          : block;
+    width            : auto;
+    max-width        : 154px;
+    background-repeat: no-repeat;
+}
+
+.soda {
+    background       : url(img/logosoda.png) center center;
+    height           : 54px;
+    background-size  : contain;
+    display          : block;
+    width            : auto;
+    max-width        : 154px;
+    background-repeat: no-repeat;
+}
+
+.resulat {
+    background       : url(img/bgcard.png) center center;
+    background-repeat: no-repeat;
+    background-size  : contain;
+    width            : 100%;
+    max-width        : 400px;
+    min-height       : 450px;
+    position         : relative;
+    display          : flex;
+    align-items      : center;
+    justify-content  : center;
+    flex-direction   : column;
+
+    i {
+        width   : 100px;
+        top     : 3em;
+        left    : 4em;
+        position: absolute;
+    }
+
+    .missblakable {
+        position: absolute;
+        bottom  : 1em;
+    }
+}
+
+.bottle {
+    max-height     : 250px;
+    max-width      : 120px;
+    overflow       : hidden;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+
+}
+
+.zebf {
+    max-height     : 250px;
+    position       : absolute;
+    top            : -50px;
+    margin         : auto;
+    right          : 0;
+    bottom         : 0;
+    left           : 0;
+    padding        : 0;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+}
+
+.missblaka {
+    max-height     : 111px;
+    position       : absolute;
+    top            : 0;
+    margin         : auto;
+    right          : 0;
+    bottom         : 47px;
+    left           : 0;
+    padding        : 0;
+    /* background  : #f00; */
+    align-items    : center;
+    justify-content: center;
+    flex-direction : row;
+    max-width      : 249px;
+
+    .column {
+        padding: 0;
+        margin : 0;
+    }
+
+    .is-8 {
+        h1 {
+            font-family   : $font-family-base;
+            font-size     : 20px;
+            font-weight   : 800;
+            font-stretch  : normal;
+            font-style    : normal;
+            line-height   : 0.86;
+            letter-spacing: normal;
+            text-align    : left;
+            color         : #fff;
+        }
+
+        h2 {
+            font-family   : Calibri;
+            font-size     : 18px;
+            font-weight   : normal;
+            font-stretch  : normal;
+            font-style    : normal;
+            line-height   : 1;
+            letter-spacing: normal;
+            text-align    : left;
+            color         : #c40e0e;
+
+            strong {
+                color      : #c40e0e;
+                font-weight: 800;
+            }
+        }
+    }
+
+    img {
+        border-radius: 9999px;
+        border       : 2px white solid;
+        width        : 80px;
+        height       : 80px;
+
+
+    }
+}
+
+#dilemna {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    flex-direction : column;
+    font-family    : $font-family-base;
+    font-size      : 18px;
+    font-weight    : normal;
+    font-stretch   : normal;
+    font-style     : normal;
+    line-height    : 1;
+    letter-spacing : normal;
+    text-align     : center;
+    color          : #fff;
+
+    color     : #fff;
+    margin-top: -57px !important;
+
+    .strong {
+        font-weight: bold;
+        color      : #fff !important;
+    }
+}
+
+.skewdumufucka {
+    transform       : rotate(354deg);
+    transform-origin: top left;
+    scale           : .85;
+
+}
+
+.button-alt {
+    background-color: #c40e0e !important;
+    color           : #fff;
+    font-size       : 1em !important;
+    font-weight     : 700;
+    text-transform  : uppercase;
+    border-radius   : 28px;
+    width           : auto !important;
+    display         : block;
+    border          : none;
+    padding         : 1em;
+    margin          : 1em auto 10em auto !important;
+
+    img {
+        height      : 20px;
+        width       : auto;
+        margin-right: 10px;
+        ;
+    }
+}
